@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blur"
+    tools:context=".Level3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/timerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="20"
+            android:textColor="@color/purple_500"
+            android:textSize="80dp"
+            android:textStyle="bold" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="18dp">
+
+            <ImageButton
+                android:id="@+id/lvl3_secondImageButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="answerChecker" />
+
+            <ImageButton
+                android:id="@+id/lvl3_firstImageButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="answerChecker" />
+
+            <ImageButton
+                android:id="@+id/lvl3_forthImageButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="answerChecker" />
+
+            <ImageButton
+                android:id="@+id/lvl3_thirdImageButton"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="50dp"
+                android:onClick="answerChecker" />
+        </GridLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

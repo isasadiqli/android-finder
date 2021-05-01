@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".Level1"
+
+    android:layout_below="@+id/topBarLayout"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginBottom="0dp"
+    android:background="@drawable/background_blur"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="322dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/timerTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="99dp">
+
+        <ImageButton
+            android:id="@+id/lvl1_firstImageButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="answerChecker" />
+
+        <ImageButton
+            android:id="@+id/lvl1_secondImageButton"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="-7dp"
+            android:layout_marginRight="-7dp"
+            android:onClick="answerChecker" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:alpha="1.0"
+        android:text="20"
+        android:textColor="@color/purple_500"
+        android:textSize="80dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
